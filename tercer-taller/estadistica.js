@@ -18,6 +18,10 @@ function calcularMediaAritmetica(array) {
 
 function calcularMediana(array) {
 
+    array.sort(function(a, b) {
+        return a - b;
+      });
+      
     let posicion = Math.round(array.length / 2) - 1;
 
     if (array.length % 2 === 0) {
